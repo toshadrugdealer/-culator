@@ -110,7 +110,7 @@ function App() {
           </button>
         ))}
         <button className="clearBtn" onClick={clear}>
-          AC
+          CE
         </button>
       </div>
     </div>
