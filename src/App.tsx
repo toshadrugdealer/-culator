@@ -46,7 +46,6 @@ function App() {
         setSign("");
         setB("");
       } else if (a !== "" && b !== "" && number !== "=") {
-        console.log(number);
         switch (sign) {
           case "+": {
             setA(Number(a) + Number(b));
