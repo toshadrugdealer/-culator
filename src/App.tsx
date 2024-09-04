@@ -25,6 +25,8 @@ function App() {
       setSign(number);
       if (number === "=") {
         setTest((prev) => prev + ``);
+      } else if (number === test[test.length - 2]) {
+        setTest((prev) => prev + ``);
       } else {
         setTest((prev) => prev + ` ${number} `);
       }
@@ -57,22 +59,22 @@ function App() {
         switch (sign) {
           case "+": {
             setA(Number(a) + Number(b));
-            if (ref.current) ref.current.value = String(Number(a) + Number(b));
+            // if (ref.current) ref.current.value = String(Number(a) + Number(b));
             break;
           }
           case "-": {
             setA(Number(a) - Number(b));
-            if (ref.current) ref.current.value = String(Number(a) - Number(b));
+            // if (ref.current) ref.current.value = String(Number(a) - Number(b));
             break;
           }
           case "/": {
             setA(Number(a) / Number(b));
-            if (ref.current) ref.current.value = String(Number(a) / Number(b));
+            // if (ref.current) ref.current.value = String(Number(a) / Number(b));
             break;
           }
           case "*": {
             setA(Number(a) * Number(b));
-            if (ref.current) ref.current.value = String(Number(a) * Number(b));
+            // if (ref.current) ref.current.value = String(Number(a) * Number(b));
             break;
           }
         }
