@@ -105,7 +105,11 @@ function App() {
           </button>
         ))}
         {store.sign.map((item) => (
-          <button onClick={() => tapeNumber(item)} key={item}>
+          <button
+            className={`${item === "=" ? "equalBtn" : ""}`}
+            onClick={() => tapeNumber(item)}
+            key={item}
+          >
             {item}
           </button>
         ))}
