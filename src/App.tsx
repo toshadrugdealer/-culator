@@ -83,17 +83,10 @@ function App() {
   return (
     <div className="container">
       <div className="output">
-        <input
-          className="input"
-          ref={ref}
-          type="text"
-          defaultValue={0}
-          readOnly
-        />
-        <div style={{ color: "red" }}>
-          <p>для теста</p>
+        <div>
           <span>{a !== "" ? `${a} ${sign} ${b}` : "введите число"}</span>
         </div>
+        <input ref={ref} type="text" defaultValue={0} readOnly />
       </div>
       <div className="buttons">
         {store.numbers.map((item) => (
@@ -106,7 +99,7 @@ function App() {
             {item}
           </button>
         ))}
-        <button className="btn" onClick={clear}>
+        <button className="clearBtn" onClick={clear}>
           AC
         </button>
       </div>
